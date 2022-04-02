@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="ticket.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+    
+    <title>Form Ticket ZooCaz</title>
+</head>
+<body>
+
+    <!-- ----------------------- MENU ----------------------- -->
+       
+    <nav id="navmenu" style=" animation: fadeIn 3s;">
+        <ul id="ulMenu">
+            <li id="lihomeMenu"><a href="formTicket.html" style="text-decoration:none" id="homeMenu"  class="menu activeMenu">Form</a></li>
+            <li id="liaboutMenu" ><a href="afficheListeTickets.php" style="text-decoration:none" id="aboutMenu" class="menu">All tickets</a></li>
+            <li id="lihomeMenu"><a href="afficherTicket.php" style="text-decoration:none" id="homeMenu"  class="menu ">One ticket</a></li>
+            
+
+            
+        </ul>
+    </nav>
+
+    <!-- <div class="logo">
+        <img src="ZooCazLogoB.png" style="width: 20%;" alt="ZooCaz">
+    </div> -->
+
+<div class="divFormTicket" style="margin-top: 5%;">
+
+<form method="post" action="recupTicket.php" class="formTicket">
+    <label for="priority-select">Priority:</label>
+    <select name="priority" id="priority-select">
+        <option value="">--Please choose a priority--</option>
+        <option value="high">High</option>
+        <option value="medium">Medium</option>
+        <option value="low">Low</option>
+    </select><br>
+
+    <label for="subject">Subject:</label>
+    <input type="text" id="subject" name="subject" placeholder="Your subject"><br>
+
+    <label for="description">Description:</label>
+    <textarea id="description" name="description" rows="4" cols="50" placeholder="Your description here"></textarea><br>
+
+    <label for="lname">Status</label>
+    <select name="status" id="status-select">
+        <option value="enCours">En cours</option>
+        <option value="resolu">Resolu</option>
+    </select><br>
+
+    <label for="sector-select">Zoo sector:</label>
+    <select name="zoo-sector" id="sector-select">
+        <option value="">--Please choose a sector--</option>
+        <option value="felines">Felines</option>
+        <option value="aquarium">Aquarium</option>
+        <option value="primates">Primates</option>
+        <option value="birds">Birds</option>
+    </select><br>
+
+    <label for="exampleInputEmail1">Email address:</label>
+    <input name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small><br>
+
+    <label for="exampleInputPassword1">Password:</label>
+    <input name="password" type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"><br>
+
+    <button name="submit" type="submit" id="submit" class="btn btn-primary">Submit</button>
+    <p style="font-size: 1em;">Remplissez bien toute les cases (à part status qui est déjà pré-rempli), sinon le formulaire ne s'enverra pas !</p>
+  </form>
+
+</div>
+</body>
+</html>
