@@ -94,8 +94,8 @@
     <form method="post" action="modifierTicket.php" class="formTicket">
         <label for="lname">Voulez vous modifier le statut ?</label>
         <select name="status" id="status-select">
-            <option value="enCours">En cours</option>
-            <option value="resolu">Resolu</option>
+            <option value="En cours">En cours</option>
+            <option value="Resolu">Resolu</option>
         </select><br>
 
         <input type="hidden" name="id" value="<?php echo "".$idTicket."" ?>"></input>
