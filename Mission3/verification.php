@@ -15,9 +15,13 @@
 //$utilisateurs =["Lina@gmail.com","passeLina","Edgar@gmail.com","passeEdgar"];
 
    // Vérifier si le formulaire est soumis avec POST 
-
+   $verif = false;
+   if(!empty($_POST['email']) && !empty($_POST['password']) && !empty($_POST['check'])){
+      $verif = true;
+   }   
+  
    
-   if (isset( $_POST['submit'] ) ) {
+   if (isset( $_POST['submit']) && $verif ) {
      
     $bool = false;
     $email = $_POST['email']; 
@@ -36,7 +40,7 @@
 */
 
    $json = file_get_contents('login.json');
-   
+
    $json_data = json_decode($json,true);
    //print_r($json_data);
    foreach($json_data as $logs){
@@ -62,8 +66,10 @@
      }
      else{ 
          echo "<div style='border: solid 2px red;'>Votre compte n'existe pas</div>";
-         //header('Location: authentification.html');
      }
+  }
+  else{
+   header('Location: authentification.html');
   }
 // adresse avec POST :
 // http://localhost/ZooCaz/Mission3/verification.php
