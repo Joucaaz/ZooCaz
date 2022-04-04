@@ -1,0 +1,13 @@
+body{
+    background-color: #171617;
+    font-family:'Montserrat','serif';
+    scroll-behavior: smooth;
+    color: white;
+}
+.form{
+    width: 50%;
+    margin: 10% 0% 0% 25%;
+}
+.button{
+background-color: #e3b405;
+}
