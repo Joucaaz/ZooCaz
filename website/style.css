@@ -1,0 +1,217 @@
+body{
+    background-color: #171617 !important;
+    font-family:'Montserrat','serif';
+    scroll-behavior: smooth;
+    color:#FFF !important;
+}
+
+/* INDEX.PHP STYLE */
+
+.sector{
+    width: 50%;
+    margin-top: -2%;
+}
+.sector1{
+    display: flex;
+    flex-direction: row;
+}
+.sector2{
+    display: flex;
+    flex-direction: row;
+}
+h3{
+    color: #e3b405;
+    font-size: 2.5em    ;
+    text-align: center;
+}
+h1{
+    color: #e3b405;
+    font-size: 3em;
+    text-align: center;
+}
+.sector-container img{
+    margin-left: 12%;
+    margin-right: 12%;
+    width: 70%;
+    height: 200px;
+    transition: 0.5s ease-in-out;
+}
+.sector-container img:hover{
+    transform: scale(1.2);
+}
+.sector-container p{
+    color: white;
+    font-size: 1.2em;
+    text-align: center;
+    margin: 5%;
+}
+.sector-container h1{
+    margin-bottom: 3%;
+}
+.sector-container h3{
+    margin: 3%;
+}
+.hourAnimal{
+    margin: 5% 0 3% 0;
+}
+.hourAnimal h4{
+    color: #FFF;
+}
+.activeMenu{
+    color: #e3b405;
+}
+#navmenu{
+    background-color: #171617;
+    border-bottom: solid 2px #e3b405;
+    z-index:2000;
+    transition:0.5s;
+    position:fixed;
+    width:100%;
+    height:7vh;
+    top:0
+}
+ul li{
+    list-style-type:none;
+    font-size:3vh;
+    flex-grow:1;
+    line-height:2.3;
+    height:100%;
+    transition:0.5s
+}
+ul{
+    height:7vh;
+    margin:0;
+    padding:0;
+    margin-left:24vw;
+    margin-right:24vw;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    text-align:center;
+    align-items:center
+}
+ul li a{
+    color:#fff
+}
+.menu{
+    z-index:3;
+    transition-duration:0.5s
+}
+#navmenu.menu-scroll{
+    background-color:#171617;
+    border-bottom:solid 2px #e3b405;
+    z-index:2000
+}
+#liallticketMenu{
+    border-right:solid 1px #272f38
+}
+#liaddticketMenu{
+    border-right:solid 1px #272f38
+}
+#lichooseticketMenu{
+    border-right:solid 1px #272f38
+}
+#lihomeMenu{
+    border-left:solid 1px #272f38;
+    border-right:solid 1px #272f38
+}
+#liaboutMenu{
+    border-right:solid 1px #272f38
+}
+#liskillsMenu{
+    border-right:solid 1px #272f38
+}
+#licareerMenu{
+    border-right:solid 1px #272f38
+}
+#liportfolioMenu{
+    border-right:solid 1px #272f38
+}
+#lihomeMenu.homemenu{
+    border-right:solid 1px #272f38
+}
+#liaboutMenu.aboutmenu{
+    border-right:solid 1px #272f38
+}
+#liskillsMenu.skillsmenu{
+    border-right:solid 1px #272f38
+}
+#licareerMenu.careermenu{
+    border-right:solid 1px #272f38
+}
+#liportfolioMenu.portfoliomenu{
+    border-right:solid 1px #272f38
+}
+.menu:hover{
+    color:#e3b405
+}
+.zoocazLogo{
+    position:fixed;
+    width:85px;
+    left:2%;
+    top:.5%
+}
+.zoocazLog{
+    position:fixed;
+    right:2%;
+    top:0.8%;
+}
+
+/* END INDEX.PHP STYLE */
+
+
+/* LOG.PHP STYLE */
+
+
+.buttonHome{
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 50px;
+    color: white !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #e3b405;
+    padding: 20px;
+    font-size: 1.4em;
+    border: 2px solid #171617 !important;
+    display: inline-block;
+    transition: all 0.4s ease 0s;
+
+}
+.buttonHome:hover{
+    color:#ffffff!important;
+    background:#171617;
+    border-color:#e3b405!important;
+    transition:all 0.4s ease 0s;
+    cursor: pointer;
+}
+.text{
+    margin-top: 15%;
+}
+
+/* END LOG.PHP STYLE */
+
+/* FOOTER */
+footer{
+margin-top: 4%;
+}
+.social-media{
+    margin-top: -1%;
+    margin-bottom: -1%;
+    display: flex;
+    flex-direction: row;
+    margin-left: 35%;
+    margin-right: 35%;
+}
+.social-media img{
+    width: 80%;
+    transition: 0.35s ease-in-out;
+}
+.social-media img:hover{
+    transform: scale(1.35);
+}
+.footer-bottom{
+    margin: 1%;
+    font-size: 1.3em;
+}
+/* END FOOTER */
