@@ -8,7 +8,7 @@
 - Username : romuald.grignon@cyu.fr     |   Password : romualdBest
 - Username : joudynho@free.fr     |   Password : azerty
 
-(The code respecting all the teacher's requests is the one of the online site in the /website folder)
+(The code respecting all the teacher's requests is the one of the online site in the /website folder. All missions are normally respected there)
 
 ## Features
 
